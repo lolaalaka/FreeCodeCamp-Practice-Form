@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="main">
+    
+        <div>
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </div>
+     <div class="box">
+        <div class="form">
+           <form id="survey-form">
+            <label for="name" id="name-label">Name</label><br>
+            <br><input type="text" id="name" class="text" placeholder="Enter your name" required>
+           
+            <br>
+            <br><label for="email" id="email-label">Email</label><br>
+            <br><input type="email" name="email" id="email" pattern=".+@globex.com" required class="text" placeholder="Enter your Email">
+            <br>
+    
+            <br><label for="number" id="number-label">Age (optional)</label><br>
+            <br><input type="number" name="" id="number" min="18" max="35" class="text" placeholder="Age">
+            <br>
+    
+            <br><label for="dropdown">Which option best describes your current role?</label>
+            <br> <select name="dropdown" id="dropdown" class="text question">
+            <option value="Select your current role">Select your current role</option>
+            <option value="Student">Student</option>
+            <option value="Full time job">Full time job</option>
+            <option value="Full time learner">Full time learner</option>
+            <option value="Other"></option>
+            </select>
+            <br>
+            
+            <br>
+            <label for="buttons">Would you recommend freeCodeCamp to a friend?</label>
+            <br><input type="radio" name="buttons" id="defs" value="definitely">
+            <label for="defs" class="options question">Definitely</label><br>
+            <input type="radio" name="buttons" id="like" value="maybe">
+            <label for="like" class="options">Maybe</label><br>
+            <input type="radio" name="buttons" id="not" value="not sure">
+            <label for="not" class="options">Not sure</label>
+            <br>
+    
+            <br>
+            <label for="box">What would you like to see improved? (Check all that apply)</label><br>
+            <input type="checkbox" name="box" id="box" value="Front-end Projects">
+            <label for="box" class="options question">Front-end Projects</label><br>
+            <input type="checkbox" name="box" id="box" value="Back-end Projects">
+            <label for="box" class="options">Back-end Projects</label><br>
+            <input type="checkbox" name="box" id="box" value="Data Visualization">
+            <label for="box" class="options">Data Visualization</label><br>
+            <input type="checkbox" name="box" id="box" value="Challenges">
+            <label for="box" class="options">Challenges</label><br>
+            <input type="checkbox" name="box" id="box" value="Open Source Community">
+            <label for="box" class="options">Open Source Community</label>
+            <br>
+        
+            <br>
+            <label for="texrea">Questions or Suggestions</label><br>
+            <br><textarea name="texrea" id="texrea" cols="70" rows="10"></textarea>
+            <br>
+    
+            <br>
+            <button id="submit">Submit</button>
+    
+    
+           </form> 
+        </div>
+    
+
+    </div>
+    
+
+</div>
+    
+</body>
+</html>
